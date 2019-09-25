@@ -1,6 +1,6 @@
 
 ############################################################################################################
-Script de Radios para o Retropie.
+Script de R√°dio para o Retropie.
 Autor: Jairo Lopes
 ############################################################################################################
 
@@ -15,26 +15,29 @@ Autor: Jairo Lopes
 #############################################################################################################
 
                    
-O arquivo RADIOS.txt contÈm as urls dos streams de r·dio.
-Aqui nesta pasta tambÈm ficam as imagens png de cada r·dio.
+O arquivo RADIOS.txt cont√©m as urls dos streams de r√°dio.
+Aqui nesta pasta tamb√©m ficam as imagens png de cada r√°dio.
 
-QUER ADICIONAR OUTRAS R¡DIOS?
+QUER ADICIONAR OUTRAS R√ÅDIOS?
 
-IMPORTANTE: N„o renomeie o arquivo e siga o mesmo padr„o de formataÁ„o. Mantenha a letra que vem antes de cada link.
-OBS.: Por algum motivo que ainda n„o consegui descobrir o script sÛ funciona bem com 10 urls.
+IMPORTANTE: N√£o renomeie o arquivo e siga o mesmo padr√£o de formata√ß√£o. Mantenha a letra que vem antes de cada link.
+OBS.: Por algum motivo que ainda n√£o consegui descobrir o script s√≥ funciona bem com 10 urls.
 
-1- Como conseguir o link de uma r·dio?
+1- Como conseguir o link de uma r√°dio?
 
 Sugiro o site https://br.radio.net.
-Basta selecionar uma r·dio, clicar com o bot„o direito do mouse em cima do nome da r·dio (‡ direita do bot„o play) e depois "exbir cÛdigo fonte da p·gina"
-na p·gina que abrir procure por "streamUrl" e copie o link que est· entre aspas.
-EXEMPLO : o link da R·dio Antena 1-S„o Paulo È http://antena1.newradio.it/stream/1/ 
+Basta selecionar uma r√°dio, clicar com o bot√£o direito do mouse em cima do nome da r√°dio (√† direita do bot√£o play) e depois "exbir c√≥digo fonte da p√°gina"
+na p√°gina que abrir procure por "streamUrl" e copie o link que est√° entre aspas.
+EXEMPLO : o link da R√°dio Antena 1-S√£o Paulo √© http://antena1.newradio.it/stream/1/ 
 
-2- As imagens para as r·dios devem estar nomeadas conforme o padr„o:
-Exemplo:   DIgamos que queira substituir a primeira r·dio da lista atual (RADIO 80FM) pela Antena 1, ent„o teremos na primeira linha:
+2- As imagens para as r√°dios devem estar nomeadas conforme o padr√£o:
+Exemplo:   DIgamos que queira substituir a primeira r√°dio da lista atual (RADIO 80FM) pela Antena 1, ent√£o teremos na primeira linha:
 
 B http://antena1.newradio.it/stream/1/
-Logo a imagem B.png tambem dever· ser substituÌda.
-Coloquei um template bem simples aqui na pasta, basta substituir o nome da radio e colocar a imagem, que pode ser tambem tirada do  https://br.radio.net.
+Logo a imagem B.png tambem dever√° ser substitu√≠da.
+Coloquei um template bem simples aqui na pasta junto com a fonte que utilizei.
+
+
+###############################################################################################################
 
 
