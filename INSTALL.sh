@@ -40,13 +40,14 @@ sudo chmod +x /usr/local/bin/RADIO/TrocaMusica.sh;
 cd /usr/local/bin/RADIO;
 sudo wget -O pngview "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/pngview" &&
 sudo chmod +x /usr/local/bin/RADIO/pngview;
-cd /usr/local/bin/;
+cd /usr/local/bin/RADIO;
 sudo wget -O jslisten "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/jslisten" &&
 sudo chmod +x /usr/local/bin/RADIO/jslisten;
 cd /etc/;
 sudo wget -O jslisten.cfg "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/jslisten.cfg" &&
 cd /etc/systemd/system;
 sudo wget -O jslisten.service "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/jslisten.service" &&
+mkdir /home/pi/RetroPie/roms/RADIO;
 cd /home/pi/RetroPie/roms/RADIO;
 sudo wget -O RADIOS.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/RADIOS.txt" &&
 sudo wget -O B.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/B.png" &&
@@ -71,8 +72,6 @@ echo "CRIANDO SERVIÇO JSLISTEN!"
 sudo systemctl daemon-reload
 sudo systemctl start jslisten.service
 sudo systemctl enable jslisten
-mkdir /home/pi/RetroPie/roms/RADIO
-cd /home/pi/RetroPie/roms/RADIO
 printf "\n\n"
 echo -e "\033[1;32m JSLISTEN OK! \033[0m"
 
