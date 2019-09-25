@@ -1,0 +1,40 @@
+
+############################################################################################################
+Script de Radios para o Retropie.
+Autor: Jairo Lopes
+############################################################################################################
+
+:::        :::::::::: :::::::::::     :::                   ::::    ::::  :::::::::: 
+:+:        :+:            :+:       :+: :+:                 +:+:+: :+:+:+ :+:        
++:+        +:+            +:+      +:+   +:+                +:+ +:+:+ +:+ +:+        
++#+        +#++:++#       +#+     +#++:++#++: +#++:++#++:++ +#+  +:+  +#+ +#++:++#   
++#+        +#+            +#+     +#+     +#+               +#+       +#+ +#+        
+#+#        #+#            #+#     #+#     #+#               #+#       #+# #+#        
+########## ########## ########### ###     ###               ###       ### ##########
+
+#############################################################################################################
+
+                   
+O arquivo RADIOS.txt contém as urls dos streams de rádio.
+Aqui nesta pasta também ficam as imagens png de cada rádio.
+
+QUER ADICIONAR OUTRAS RÁDIOS?
+
+IMPORTANTE: Não renomeie o arquivo e siga o mesmo padrão de formatação. Mantenha a letra que vem antes de cada link.
+OBS.: Por algum motivo que ainda não consegui descobrir o script só funciona bem com 10 urls.
+
+1- Como conseguir o link de uma rádio?
+
+Sugiro o site https://br.radio.net.
+Basta selecionar uma rádio, clicar com o botão direito do mouse em cima do nome da rádio (à direita do botão play) e depois "exbir código fonte da página"
+na página que abrir procure por "streamUrl" e copie o link que está entre aspas.
+EXEMPLO : o link da Rádio Antena 1-São Paulo é http://antena1.newradio.it/stream/1/ 
+
+2- As imagens para as rádios devem estar nomeadas conforme o padrão:
+Exemplo:   DIgamos que queira substituir a primeira rádio da lista atual (RADIO 80FM) pela Antena 1, então teremos na primeira linha:
+
+B http://antena1.newradio.it/stream/1/
+Logo a imagem B.png tambem deverá ser substituída.
+Coloquei um template bem simples aqui na pasta, basta substituir o nome da radio e colocar a imagem, que pode ser tambem tirada do  https://br.radio.net.
+
+
