@@ -1,10 +1,10 @@
 #!/bin/sh
 
 
-##TEMPO EM SEGUNDOS PARA AGUARDAR ATÉ COMEÇAR A TOCAR , CASO TENHA UMA SPLASHSCREEN#
-############
+##TEMPO EM SEGUNDOS PARA AGUARDAR ATÉ COMEÇAR A TOCAR (EVITA QUE O RADIO COMECE DURANTE SPLASHSCREEN#
+##############
 sleep 14
-############
+##############
 
 
 
@@ -13,7 +13,7 @@ sleep 14
 
 
 echo "B" > /home/pi/tocando-agora.txt;
-while true; do for i in $(cat /home/pi/LISTA.txt); do sudo mplayer -slave -input file=/home/pi/fifinho $i >/dev/null ; echo "$i" > /home/pi/tocando-agora.txt; done done &
+while true; do for i in $(cat /home/pi/Retropie/roms/RADIOS/RADIOS.txt); do sudo mplayer -slave -input file=/usr/local/bin/RADIO/radio.fifo $i >/dev/null ; echo "$i" > /home/pi/tocando-agora.txt; done done &
 
 
 while :; do
