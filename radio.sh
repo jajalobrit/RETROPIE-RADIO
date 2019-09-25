@@ -13,16 +13,13 @@ sleep 14
 
 
 echo "B" > /home/pi/tocando-agora.txt;
-while true; do for i in $(cat /home/pi/Retropie/roms/RADIOS/RADIOS.txt); do sudo mplayer -slave -input file=/usr/local/bin/RADIO/radio.fifo $i >/dev/null ; echo "$i" > /home/pi/tocando-agora.txt; done done &
-
-
+while true; do for i in $(cat /home/pi/Retropie/roms/RADIO/RADIOS.txt); do sudo mplayer -slave -input file=/usr/local/bin/RADIO/radio.fifo $i >/dev/null ; echo "$i" > /usr/local/bin/RADIO/tocando-agora.txt; done done &
 while :; do
 for R in $(tail -n 1 /home/pi/tocando-agora.txt); 
-#| tr '1' 'B' | tr '2' 'C' | tr '3' 'D' | tr '4' 'E' | tr '5' 'F' | tr '6' 'G' | tr '7' 'H' | tr '8' 'I'| tr '9' 'J'| tr '10' 'K');
 do
 sudo pkill -u pi pngview
 sleep 1
-sudo -u pi /usr/local/bin/radio/pngview -b 0 -l 999995 -y 15 -x 1580 /home/pi/$R.png;
+sudo -u pi /usr/local/bin/RADIO/pngview -b 0 -l 999995 -y 15 -x 1580 /home/pi/RetroPie/roms/RADIO/$R.png;
 sudo pkill -u pi pngview
 #sleep 1
 done
