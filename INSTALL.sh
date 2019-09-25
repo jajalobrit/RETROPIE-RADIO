@@ -30,6 +30,8 @@ echo -e "\033[1;32m MPLAYER OK! \033[0m"
 ############################################ DOWNLOAD DOS ARQUIVOS NECESSÁRIOS ##################################################
 printf "\n\n"
 echo "BAIXANDO ARQUIVOS"
+sudo echo "B" > /home/pi/tocando-agora.txt;
+sudo chmod 777 /home/pi/tocando-agora.txt;
 sudo mkdir /usr/local/bin/RADIO
 cd /usr/local/bin/RADIO/;
 sudo wget -O radio.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/radio.sh" &&
