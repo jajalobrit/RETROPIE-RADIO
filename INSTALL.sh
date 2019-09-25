@@ -37,19 +37,20 @@ sudo chmod +x /usr/local/bin/RADIO/radio.sh;
 cd /usr/local/bin/RADIO/;
 sudo wget -O TrocaMusica.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/TrocaMusica.sh" &&
 sudo chmod +x /usr/local/bin/RADIO/TrocaMusica.sh;
-cd /usr/local/bin/RADIO;
+cd /usr/local/bin/RADIO/;
 sudo wget -O pngview "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/pngview" &&
 sudo chmod +x /usr/local/bin/RADIO/pngview;
-cd /usr/local/bin/RADIO;
+cd /usr/local/bin/RADIO/;
 sudo wget -O jslisten "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/jslisten" &&
 sudo chmod +x /usr/local/bin/RADIO/jslisten;
 cd /etc/;
 sudo wget -O jslisten.cfg "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/jslisten.cfg" &&
 cd /etc/systemd/system;
 sudo wget -O jslisten.service "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/jslisten.service" &&
-mkdir /home/pi/RetroPie/roms/RADIO;
-cd /home/pi/RetroPie/roms/RADIO;
+mkdir /home/pi/RetroPie/roms/RADIO/;
+cd /home/pi/RetroPie/roms/RADIO/;
 sudo wget -O RADIOS.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/RADIOS.txt" &&
+sudo chmod 777 /home/pi/RetroPie/roms/RADIO/RADIOS.txt;
 sudo wget -O B.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/B.png" &&
 sudo wget -O C.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/C.png" &&
 sudo wget -O D.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/D.png" &&
