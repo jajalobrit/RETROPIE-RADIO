@@ -22,7 +22,7 @@ printf "\n\n"
 echo "INSTALANDO MPLAYER!"
 yes | sudo apt-get install mplayer &&
 sudo mkfifo /usr/local/bin/RADIO/radio.fifo
-sudo chmod 777 usr/local/bin/RADIO/radio.fifo
+sudo chmod 777 /usr/local/bin/RADIO/radio.fifo
 printf "\n\n"
 echo -e "\033[1;32m MPLAYER OK! \033[0m"
 
