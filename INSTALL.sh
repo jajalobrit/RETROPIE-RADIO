@@ -88,6 +88,10 @@ sudo killall pngview
 sudo killall mplayer" >> /opt/retropie/configs/all/runcommand-onstart.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
+elif fgrep -q -e "sudo pkill radio.sh" /opt/retropie/configs/all/runcommand-onstart.sh
+then
+printf "\n\n"
+echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 else
 cd /opt/retropie/configs/all/;
 sudo wget -O runcommand-onstart.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/runcommand-onstart.sh" &&
@@ -95,13 +99,17 @@ sudo chmod +x /opt/retropie/configs/all/runcommand-onstart.sh;
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 fi
-
+printf "\n\n"
 echo "CONFIGURANDO RUNCOMMAND-ONEND"
 if
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
    echo -e "radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
+elif fgrep -q -e "radio.sh &" /opt/retropie/configs/all/runcommand-onend.sh
+then
+printf "\n\n"
+echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 else
 cd /opt/retropie/configs/all/;
 sudo wget -O runcommand-onend.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-DATETIME/master/runcommand-onend.sh" &&
