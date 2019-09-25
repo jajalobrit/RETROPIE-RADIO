@@ -8,11 +8,3 @@ H http://streams.fluxfm.de/60er/mp3-
 I http://strm112.1.fm/70s_mobile_mp3?
 J http://ip2.paineldj5.com.br:8680/stream
 K http://stream.raggakings.net:8000/
-L http://cloud2.cdnseguro.com:23538/stream
-M http://bigrradio.cdnstream1.com/5217_128?
-N http://ip2.paineldj5.com.br:8680/stream
-O http://stream.raggakings.net:8000/
-P http://192.198.204.194:9020/stream1
-Q http://bigrradio.cdnstream1.com/5217_128?
-R http://139.162.14.151:9090/stream/1/
-S http://139.162.14.151:9090/stream/1/
