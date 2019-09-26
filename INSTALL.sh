@@ -44,6 +44,7 @@ mkdir /home/pi/RetroPie/roms/RADIO/;
 cd /home/pi/RetroPie/roms/RADIO/;
 sudo wget -O RADIOS.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/RADIOS.txt" &&
 sudo chmod 777 /home/pi/RetroPie/roms/RADIO/RADIOS.txt;
+sudo wget -O orbitron-black.otf "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/orbitron-black.otf" &&
 sudo wget -O B.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/B.png" &&
 sudo wget -O C.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/C.png" &&
 sudo wget -O D.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/D.png" &&
