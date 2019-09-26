@@ -97,7 +97,7 @@ printf "\n\n"
 echo "CONFIGURANDO RUNCOMMAND-ONEND"
 if
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
-   echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \; radio.sh" >> /opt/retropie/configs/all/runcommand-onend.sh
+   echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \; radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
 elif fgrep -q -e "radio.sh &" /opt/retropie/configs/all/runcommand-onend.sh
