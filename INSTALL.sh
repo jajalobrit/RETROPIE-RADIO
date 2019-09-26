@@ -43,21 +43,21 @@ sudo wget -O jslisten.service "https://raw.githubusercontent.com/jajalobrit/RETR
 mkdir /home/pi/RetroPie/roms/RADIO/;
 sudo chmod 777 /home/pi/RetroPie/roms/RADIO;
 cd /home/pi/RetroPie/roms/RADIO/;
-sudo wget -O RADIOS.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/RADIOS.txt" &&
+wget -O RADIOS.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/RADIOS.txt" &&
 sudo chmod 777 /home/pi/RetroPie/roms/RADIO/RADIOS.txt;
-sudo wget -O orbitron-black.otf "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/orbitron-black.otf" &&
-sudo wget -O B.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/B.png" &&
-sudo wget -O C.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/C.png" &&
-sudo wget -O D.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/D.png" &&
-sudo wget -O E.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/E.png" &&
-sudo wget -O F.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/F.png" &&
-sudo wget -O G.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/G.png" &&
-sudo wget -O H.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/H.png" &&
-sudo wget -O I.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/I.png" &&
-sudo wget -O J.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/J.png" &&
-sudo wget -O K.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/K.png" &&
-sudo wget -O leia-me.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/leia-me.txt" &&
-sudo wget -O TEMPLATE.psd "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/TEMPLATE.psd" &&
+wget -O orbitron-black.otf "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/orbitron-black.otf" &&
+wget -O B.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/B.png" &&
+wget -O C.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/C.png" &&
+wget -O D.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/D.png" &&
+wget -O E.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/E.png" &&
+wget -O F.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/F.png" &&
+wget -O G.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/G.png" &&
+wget -O H.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/H.png" &&
+wget -O I.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/I.png" &&
+wget -O J.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/J.png" &&
+wget -O K.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/K.png" &&
+wget -O leia-me.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/leia-me.txt" &&
+wget -O TEMPLATE.psd "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/TEMPLATE.psd" &&
 
 printf "\n\n"
 echo -e "\033[1;32m ARQUIVOS OK! \033[0m"
@@ -88,7 +88,7 @@ printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 else
 cd /opt/retropie/configs/all/;
-sudo wget -O runcommand-onstart.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/runcommand-onstart.sh" &&
+wget -O runcommand-onstart.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/runcommand-onstart.sh" &&
 sudo chmod +x /opt/retropie/configs/all/runcommand-onstart.sh;
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
@@ -107,7 +107,7 @@ printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 else
 cd /opt/retropie/configs/all/;
-sudo wget -O runcommand-onend.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/runcommand-onend.sh" &&
+wget -O runcommand-onend.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/runcommand-onend.sh" &&
 sudo chmod +x /opt/retropie/configs/all/runcommand-onend.sh;
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
@@ -120,7 +120,7 @@ echo "CONFIGURANDO KODI.SH"
 if
 [ -d "/home/pi/RetroPie/roms/kodi" ]; then
 cd /home/pi/RetroPie/roms/kodi/
-sudo wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/kodi1.sh" &&
+wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/kodi1.sh" &&
 mv -f /home/pi/RetroPie/roms/kodi.sh /home/pi/RetroPie/roms/kodi.sh
 sudo chmod +x kodi.sh
 printf "\n\n"
@@ -128,7 +128,7 @@ echo -e "\033[1;32m KODI.SH OK! \033[0m"
 elif
 [ -d "/usr/local/bin/TIME.sh" ]; then
 cd /home/pi/RetroPie/roms/kodi/
-sudo wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/kodi2.sh" &&
+wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/kodi2.sh" &&
 mv -f /home/pi/RetroPie/roms/kodi.sh /home/pi/RetroPie/roms/kodi.sh
 sudo chmod +x kodi.sh
 printf "\n\n"
@@ -138,7 +138,7 @@ fi
 if
 [ -d "/home/pi/RetroPie/roms/ports/kodi.sh" ]; then
 cd /home/pi/RetroPie/roms/ports/
-sudo wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/kodi1.sh" &&
+wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/kodi1.sh" &&
 mv -f /home/pi/RetroPie/roms/kodi.sh /home/pi/RetroPie/roms/kodi.sh
 sudo chmod +x kodi.sh
 printf "\n\n"
@@ -146,7 +146,7 @@ echo -e "\033[1;32m KODI.SH OK! \033[0m"
 elif
 [ -d "/usr/local/bin/TIME.sh" ]; then
 cd /home/pi/RetroPie/roms/ports/
-sudo wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/kodi2.sh" &&
+wget -O kodi.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/kodi2.sh" &&
 mv -f /home/pi/RetroPie/roms/kodi.sh /home/pi/RetroPie/roms/kodi.sh
 sudo chmod +x kodi.sh
 printf "\n\n"
