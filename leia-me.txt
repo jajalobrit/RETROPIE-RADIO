@@ -31,11 +31,11 @@ na página que abrir procure por "streamUrl" e copie o link que está entre aspa
 EXEMPLO : o link da Rádio Antena 1-São Paulo é http://antena1.newradio.it/stream/1/ 
 
 2- As imagens para as rádios devem estar nomeadas conforme o padrão:
-Exemplo:   DIgamos que queira substituir a primeira rádio da lista atual (RADIO 80FM) pela Antena 1, então teremos na primeira linha:
+Exemplo:   Digamos que queira substituir a primeira rádio da lista atual (RADIO 80FM) pela Antena 1, então teremos na primeira linha:
 
 B http://antena1.newradio.it/stream/1/
 Logo a imagem B.png tambem deverá ser substituída.
-Coloquei um template bem simples aqui na pasta junto com a fonte que utilizei.
+Coloquei um template bem simples aqui na pasta para fazer nocas imagens para rádios, junto stá também a fonte que utilizei.
 
 
 ###############################################################################################################
