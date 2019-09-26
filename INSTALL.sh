@@ -41,6 +41,7 @@ sudo wget -O jslisten.cfg "https://raw.githubusercontent.com/jajalobrit/RETROPIE
 cd /etc/systemd/system;
 sudo wget -O jslisten.service "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/jslisten.service" &&
 mkdir /home/pi/RetroPie/roms/RADIO/;
+sudo chmod 777 /home/pi/RetroPie/roms/RADIO;
 cd /home/pi/RetroPie/roms/RADIO/;
 sudo wget -O RADIOS.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/RADIOS.txt" &&
 sudo chmod 777 /home/pi/RetroPie/roms/RADIO/RADIOS.txt;
