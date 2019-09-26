@@ -16,11 +16,6 @@
 <br />Uma imagem png é carregada para cada url no momento em que ela é iniciada pelo mplayer.
 <br />Ao abrir um emulador ou o kodi o funcionamento para e só retoma ao fechar.
 
-**TO DO**
-<br />Adicionar um teste de conexão com uma imagem de "sem conexão" em caso de estar offline 
-<br />Capturar o título da música tocada atualmente ( não achei um meio de tirar só essa informação do output gigantesco do mplayer e também não sei se compensa já que algumas rádios fornecem essa informação e outras não.
-<br />Seria ótimo capturar uma miniatura da logo da rádio na internet e exibir ( atualmente está funcionando com imagens png feitas manualmente>
-
 ---------------------------------------------------------------------------------------------------------------------------------
 **IMPORTANTE:**
 
