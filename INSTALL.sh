@@ -78,7 +78,8 @@ if
 [ -d "/opt/retropie/configs/all/runcommand-onstart.sh" ]; then
    echo -e "sudo pkill radio.sh
 sudo killall pngview
-sudo killall mplayer" >> /opt/retropie/configs/all/runcommand-onstart.sh
+sudo killall mplayer
+find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,sleep,#sleep,g' {} \;" >> /opt/retropie/configs/all/runcommand-onstart.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 elif fgrep -q -e "sudo pkill radio.sh" /opt/retropie/configs/all/runcommand-onstart.sh
@@ -96,7 +97,8 @@ printf "\n\n"
 echo "CONFIGURANDO RUNCOMMAND-ONEND"
 if
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
-   echo -e "radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
+   echo -e "radio.sh &
+find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,sleep,#sleep,g' {} \;" >> /opt/retropie/configs/all/runcommand-onend.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
 elif fgrep -q -e "radio.sh &" /opt/retropie/configs/all/runcommand-onend.sh
