@@ -20,7 +20,11 @@
 **IMPORTANTE:**
 
 <br />Para adicionar outras rádios veja o leia-me em /home/pi/RetroPie/roms/RADIO 
-<br />Por algum motivo que ainda não descobri só funciona bem com "playlists" de até 10 urls. 
+<br />Por algum motivo, que ainda não descobri, só funciona bem com "playlists" de até 10 urls. 
+
+<br />Por padrão o script tem um delay de 14 segundos para iniciar ( de modo a não tocar rádio enquanto a splashscreen estiver na tela).
+<br />Caso queira alterar o delay axecute no terminal: ***sudo/nano/usr/local/bin/RADIO/radio.sh***, altere o valor ( em segundos) e salve a alteração e reinicie a Raspberry.
+
  
 ----------------------------------------------------------------------------------------------------------------------------------
 
