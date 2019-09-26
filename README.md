@@ -1,4 +1,4 @@
-***#RÁDIO PARA O RETROPIE***   
+***RÁDIO PARA O RETROPIE***   
 (Adiciona web rádios no emulationstation no Retropie para Raspberry Pi)
 
 
