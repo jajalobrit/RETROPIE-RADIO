@@ -21,6 +21,7 @@ echo -e "\033[1;32m MPLAYER OK! \033[0m"
 ############################################ DOWNLOAD DOS ARQUIVOS NECESSÁRIOS ##################################################
 printf "\n\n"
 echo "BAIXANDO ARQUIVOS"
+
 sudo echo "B" > /home/pi/tocando-agora.txt;
 sudo chmod 777 /home/pi/tocando-agora.txt;
 sudo mkdir /usr/local/bin/RADIO
@@ -65,6 +66,7 @@ echo -e "\033[1;32m ARQUIVOS OK! \033[0m"
 ################################################## CRIA O SERVICO JSLISTEN ##################################################
 printf "\n\n"
 echo "CRIANDO SERVIÇO JSLISTEN!"
+
 sudo systemctl daemon-reload
 sudo systemctl start jslisten.service
 sudo systemctl enable jslisten
@@ -74,18 +76,21 @@ echo -e "\033[1;32m JSLISTEN OK! \033[0m"
 ########################################### CONFIGURA RUNCOMMANDS ###############################################################
 printf "\n\n"
 echo "CONFIGURANDO RUNCOMMAND-ONSTART"
-if
+
+if fgrep -q -e "sudo pkill radio.sh" /opt/retropie/configs/all/runcommand-onstart.sh
+then
+printf "\n\n"
+echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
+
+elif
 [ -d "/opt/retropie/configs/all/runcommand-onstart.sh" ]; then
-   echo -e "sudo pkill radio.sh
+echo -e "sudo pkill radio.sh;
 sudo killall pngview
 sudo killall mplayer
 find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,sleep,#sleep,g' {} \;" >> /opt/retropie/configs/all/runcommand-onstart.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
-elif fgrep -q -e "sudo pkill radio.sh" /opt/retropie/configs/all/runcommand-onstart.sh
-then
-printf "\n\n"
-echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
+
 else
 cd /opt/retropie/configs/all/;
 wget -O runcommand-onstart.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/runcommand-onstart.sh" &&
@@ -93,17 +98,22 @@ sudo chmod +x /opt/retropie/configs/all/runcommand-onstart.sh;
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 fi
+
+
 printf "\n\n"
 echo "CONFIGURANDO RUNCOMMAND-ONEND"
-if
-[ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
-   echo "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \; radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
-printf "\n\n"
-echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
-elif fgrep -q -e "radio.sh &" /opt/retropie/configs/all/runcommand-onend.sh
+
+if fgrep -q -e "radio.sh &" /opt/retropie/configs/all/runcommand-onend.sh
 then
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
+
+elif
+[ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
+echo "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \; radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
+printf "\n\n"
+echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
+
 else
 cd /opt/retropie/configs/all/;
 wget -O runcommand-onend.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/runcommand-onend.sh" &&
@@ -116,6 +126,7 @@ fi
 ####################################################### CONFIGURA KODI.SH ########################################################
 printf "\n\n"
 echo "CONFIGURANDO KODI.SH"
+
 if
 [ -d "/home/pi/RetroPie/roms/kodi" ]; then
 cd /home/pi/RetroPie/roms/kodi/
@@ -124,6 +135,7 @@ mv -f /home/pi/RetroPie/roms/kodi.sh /home/pi/RetroPie/roms/kodi.sh
 sudo chmod +x kodi.sh
 printf "\n\n"
 echo -e "\033[1;32m KODI.SH OK! \033[0m"
+
 elif
 [ -d "/usr/local/bin/TIME.sh" ]; then
 cd /home/pi/RetroPie/roms/kodi/
@@ -142,6 +154,7 @@ mv -f /home/pi/RetroPie/roms/kodi.sh /home/pi/RetroPie/roms/kodi.sh
 sudo chmod +x kodi.sh
 printf "\n\n"
 echo -e "\033[1;32m KODI.SH OK! \033[0m"
+
 elif
 [ -d "/usr/local/bin/TIME.sh" ]; then
 cd /home/pi/RetroPie/roms/ports/
@@ -156,10 +169,12 @@ fi
 ############################ COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE #################################################
 printf "\n\n"
 echo "CONFIGURANDO RC.LOCAL"
+
 if fgrep -q -e "/usr/local/bin/RADIO/radio.sh &" /etc/rc.local
 then
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
+
 else
 sudo sed -i '/fi/a /usr/local/bin/RADIO/radio.sh &' /etc/rc.local
 printf "\n\n"
@@ -170,6 +185,7 @@ fi
 ############################# COLOCA A lAYER DAS SPLASHSCREENS ACIMA DO RADIO #################################################
 printf "\n\n"
 echo "CONFIGURANDO SPLASHSCREEN"
+
 find /opt/retropie/supplementary/splashscreen/ -iname asplashscreen.sh -exec sudo sed -i 's,10000,999999,g' {} \;
 printf "\n\n"
 echo -e "\033[1;32m SPLASHSCREEN OK! \033[0m"
