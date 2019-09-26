@@ -23,5 +23,3 @@ sudo -u pi /usr/local/bin/RADIO/pngview -b 0 -l 999995 -y 15 -x 1580 /home/pi/Re
 sudo pkill -u pi pngview
 done
 done
-done
-
