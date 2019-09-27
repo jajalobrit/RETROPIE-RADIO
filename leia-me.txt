@@ -25,7 +25,7 @@ OBS.: Por algum motivo que ainda não consegui descobrir o script só funciona b
 
 1- Como conseguir o link de uma rádio?
 
-Sugiro o site https://br.radio.net.
+Sugiro o site https://br.radio.net
 Basta selecionar uma rádio, clicar com o botão direito do mouse em cima do nome da rádio (à direita do botão play) e depois "exbir código fonte da página"
 na página que abrir procure por "streamUrl" e copie o link que está entre aspas.
 EXEMPLO : o link da Rádio Antena 1-São Paulo é http://antena1.newradio.it/stream/1/ 
