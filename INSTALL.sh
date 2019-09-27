@@ -83,13 +83,15 @@ echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 elif
 fgrep -q -e "sudo pkill TIME.sh" /opt/retropie/configs/all/runcommand-onstart.sh
 then
-echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,sleep,#sleep,g' {} \; sudo pkill radio.sh" >> /opt/retropie/configs/all/runcommand-onstart.sh
+echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,sleep,#sleep,g' {} \;
+sudo pkill radio.sh" >> /opt/retropie/configs/all/runcommand-onstart.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 
 elif
 [ -d "/opt/retropie/configs/all/runcommand-onstart.sh" ]; then
-   echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,sleep,#sleep,g' {} \;sudo pkill radio.sh; sudo pkill -u pi pngview" >> /opt/retropie/configs/all/runcommand-onstart.sh
+echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,sleep,#sleep,g' {} \;
+sudo pkill radio.sh; sudo pkill -u pi pngview" >> /opt/retropie/configs/all/runcommand-onstart.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 
@@ -110,13 +112,15 @@ echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
 elif
 fgrep -q -e "TIME.sh" /opt/retropie/configs/all/runcommand-onend.sh
 then
-echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \; sudo /usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
+echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \;
+sudo /usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
 
 elif
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
-   echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \; sudo /usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
+echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \;
+sudo /usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
 
