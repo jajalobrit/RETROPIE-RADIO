@@ -25,17 +25,15 @@ OBS.: Por algum motivo que ainda não consegui descobrir o script só funciona b
 
 1- Como conseguir o link de uma rádio?
 
-Sugiro o site https://br.radio.net
-Basta selecionar uma rádio, clicar com o botão direito do mouse em cima do nome da rádio (à direita do botão play) e depois "exbir código fonte da página"
-na página que abrir procure por "streamUrl" e copie o link que está entre aspas.
-EXEMPLO : o link da Rádio Antena 1-São Paulo é http://antena1.newradio.it/stream/1/ 
+Sugiro o site https://directory.shoutcast.com/Search
+Basta selecionar uma rádio, clicar no ícone de download e baixar a opção pls, em seguida abra  arquivo baixado e copie a url.
 
 2- As imagens para as rádios devem estar nomeadas conforme o padrão:
 Exemplo:   Digamos que queira substituir a primeira rádio da lista atual (RADIO 80FM) pela Antena 1, então teremos na primeira linha:
 
 B http://antena1.newradio.it/stream/1/
 Logo a imagem B.png tambem deverá ser substituída.
-Coloquei um template bem simples aqui na pasta para fazer nocas imagens para rádios, junto stá também a fonte que utilizei.
+Coloquei um template bem simples aqui na pasta para fazer novas imagens para rádios, junta está também a fonte que utilizei.
 
 
 ###############################################################################################################
