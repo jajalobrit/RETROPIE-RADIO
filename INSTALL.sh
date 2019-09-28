@@ -177,7 +177,7 @@ fi
 printf "\n\n"
 echo "CONFIGURANDO AUTOSTART"
 
-if fgrep -q -e "/usr/local/bin/RADIO/radio.sh &" /opt/retropie/configs/all/autostart.sh
+if fgrep -q -e "/usr/local/bin/RADIO/radio.sh" /opt/retropie/configs/all/autostart.sh
 then
 printf "\n\n"
 echo -e "\033[1;32m AUTOSTART OK! \033[0m"
