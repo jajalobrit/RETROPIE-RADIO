@@ -83,15 +83,14 @@ echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 elif
 fgrep -q -e "sudo pkill TIME.sh" /opt/retropie/configs/all/runcommand-onstart.sh
 then
-echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,sleep,#sleep,g' {} \;
-sudo pkill radio.sh" >> /opt/retropie/configs/all/runcommand-onstart.sh
+echo -e "sudo pkill radio.sh" >> /opt/retropie/configs/all/runcommand-onstart.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 
 elif
 [ -d "/opt/retropie/configs/all/runcommand-onstart.sh" ]; then
-echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,sleep,#sleep,g' {} \;
-sudo pkill radio.sh; sudo pkill -u pi pngview" >> /opt/retropie/configs/all/runcommand-onstart.sh
+echo -e "sudo pkill radio.sh;
+sudo pkill -u pi pngview" >> /opt/retropie/configs/all/runcommand-onstart.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 
@@ -104,7 +103,7 @@ echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 fi
 
 echo "CONFIGURANDO RUNCOMMAND-ONEND"
-if fgrep -q -e "sudo /usr/local/bin/RADIO/radio.sh &" /opt/retropie/configs/all/runcommand-onend.sh
+if fgrep -q -e "/usr/local/bin/RADIO/radio.sh &" /opt/retropie/configs/all/runcommand-onend.sh
 then
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
@@ -112,15 +111,13 @@ echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
 elif
 fgrep -q -e "TIME.sh" /opt/retropie/configs/all/runcommand-onend.sh
 then
-echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \;
-sudo /usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
+echo -e "/usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
 
 elif
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
-echo -e "find /usr/local/bin/RADIO/ -iname radio.sh -exec sudo sed -i 's,#sleep,sleep,g' {} \;
-sudo /usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
+echo -e "/usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONNEND OK! \033[0m"
 
@@ -176,17 +173,19 @@ echo -e "\033[1;32m KODI.SH OK! \033[0m"
 fi
 
 
-############################ COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE #################################################
+################################ COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE #################################################
 printf "\n\n"
 echo "CONFIGURANDO RC.LOCAL"
 
-if fgrep -q -e "/usr/local/bin/RADIO/radio.sh &" /etc/rc.local
+if fgrep -q -e "/usr/local/bin/RADIO/radio.sh &" /opt/retropie/configs/all/autostart.sh
 then
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
 
 else
-sudo sed -i '/fi/a /usr/local/bin/RADIO/radio.sh &' /etc/rc.local
+find /opt/retropie/configs/all/ -iname autostart.sh -exec sudo sed -i 's,emulationstation #auto,while pgrep omxplayer >/dev/null; do sleep 1; done\
+(sleep 10; /usr/local/bin/RADIO/radio.sh >/dev/null 2>\&1) \&\
+emulationstation #auto,g' {} \;
 printf "\n\n"
 echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
 fi
