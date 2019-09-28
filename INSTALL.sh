@@ -175,19 +175,19 @@ fi
 
 ################################ COLOCA O SCRIPT PARA SER EXECUTADO AUTOMATICAMENTE #################################################
 printf "\n\n"
-echo "CONFIGURANDO RC.LOCAL"
+echo "CONFIGURANDO AUTOSTART"
 
 if fgrep -q -e "/usr/local/bin/RADIO/radio.sh &" /opt/retropie/configs/all/autostart.sh
 then
 printf "\n\n"
-echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
+echo -e "\033[1;32m AUTOSTART OK! \033[0m"
 
 else
-find /opt/retropie/configs/all/ -iname autostart.sh -exec sudo sed -i 's,emulationstation #auto,while pgrep omxplayer >/dev/null; do sleep 1; done\
-(sleep 10; /usr/local/bin/RADIO/radio.sh >/dev/null 2>\&1) \&\
+find /opt/retropie/configs/all/ -iname autostart.sh -exec sudo sed -i 's,emulationstation #auto,while pgrep omxplayer > /dev/null 2>\&1; do sleep 1; done\
+(sleep 5; /usr/local/bin/RADIO/radio.sh > /dev/null 2>\&1) \&\
 emulationstation #auto,g' {} \;
 printf "\n\n"
-echo -e "\033[1;32m RC.LOCAL OK! \033[0m"
+echo -e "\033[1;32m AUTOSTART OK! \033[0m"
 fi
 
 
