@@ -20,13 +20,16 @@ Aqui nesta pasta também ficam as imagens png de cada rádio.
 
 QUER ADICIONAR OUTRAS RÁDIOS?
 
-IMPORTANTE: Não renomeie o arquivo e siga o mesmo padrão de formatação. Mantenha a letra que vem antes de cada link.
-OBS.: Por algum motivo que ainda não consegui descobrir o script só funciona bem com 10 urls.
+IMPORTANTE: Não renomeie o arquivo e siga o mesmo padrão de formatação. Mantenha a letra que vem antes de cada link e não deixe linhas em branco no final do arquivo.
 
 1- Como conseguir o link de uma rádio?
 
 Sugiro o site https://directory.shoutcast.com/Search
-Basta selecionar uma rádio, clicar no ícone de download e baixar a opção pls, em seguida abra  arquivo baixado e copie a url.
+Basta selecionar uma rádio, clicar no ícone de download e baixar a opção pls, em seguida abra arquivo baixado e copie a url.
+
+Outra maneira é através do site https://www.radio.de
+Depois de selecionar uma rádio basta clicar com o botão direito no nome da música sendo tocada ( parte de cima do site, ao lado da logo da rádio) e selecionar a opção "exibir código fonte" em seguida procure por "streamUrl":
+****Algumas rádios tem urls que ocupam duas linhas, atenção para copiar o link inteiro.****
 
 2- As imagens para as rádios devem estar nomeadas conforme o padrão:
 Exemplo:   Digamos que queira substituir a primeira rádio da lista atual (RADIO 80FM) pela Antena 1, então teremos na primeira linha:
