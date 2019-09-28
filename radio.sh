@@ -1,13 +1,5 @@
 #!/bin/sh
 
-
-##TEMPO EM SEGUNDOS PARA AGUARDAR ATÉ COMEÇAR A TOCAR (EVITA QUE O RADIO COMECE DURANTE SPLASHSCREEN#
-##############
-sleep 14
-##############
-
-
-
 ######################################################### RADIOS NO RETROPIE ##############################################################
 
 
