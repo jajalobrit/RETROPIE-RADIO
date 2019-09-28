@@ -7,4 +7,4 @@ G http://strm112.1.fm/moviesoundtracks_mobile_mp3?
 H http://streams.fluxfm.de/60er/mp3-
 I http://strm112.1.fm/70s_mobile_mp3?
 J http://ip2.paineldj5.com.br:8680/stream
-K http://94.23.26.22:8090/live.mp3
+K http://195.154.255.229:8000/stream/2/
