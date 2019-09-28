@@ -80,12 +80,12 @@ then
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 
-elif
-fgrep -q -e "sudo pkill TIME.sh" /opt/retropie/configs/all/runcommand-onstart.sh
-then
-echo -e "sudo pkill radio.sh" >> /opt/retropie/configs/all/runcommand-onstart.sh
-printf "\n\n"
-echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
+#elif
+#fgrep -q -e "sudo pkill TIME.sh" /opt/retropie/configs/all/runcommand-onstart.sh
+#then
+#echo -e "sudo pkill radio.sh" >> /opt/retropie/configs/all/runcommand-onstart.sh
+#printf "\n\n"
+#echo -e "\033[1;32m RUNCOMMAND-ONSTART OK! \033[0m"
 
 elif
 [ -d "/opt/retropie/configs/all/runcommand-onstart.sh" ]; then
@@ -108,12 +108,12 @@ then
 printf "\n\n"
 echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
 
-elif
-fgrep -q -e "TIME.sh" /opt/retropie/configs/all/runcommand-onend.sh
-then
-echo -e "/usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
-printf "\n\n"
-echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
+#elif
+#fgrep -q -e "TIME.sh" /opt/retropie/configs/all/runcommand-onend.sh
+#then
+#echo -e "/usr/local/bin/RADIO/radio.sh &" >> /opt/retropie/configs/all/runcommand-onend.sh
+#printf "\n\n"
+#echo -e "\033[1;32m RUNCOMMAND-ONEND OK! \033[0m"
 
 elif
 [ -d "/opt/retropie/configs/all/runcommand-onend.sh" ]; then
