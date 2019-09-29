@@ -32,10 +32,10 @@ Depois de selecionar uma rádio basta clicar com o botão direito no nome da mú
 ****Algumas rádios tem urls que ocupam duas linhas, atenção para copiar o link inteiro.****
 
 2- As imagens para as rádios devem estar nomeadas conforme o padrão:
-Exemplo:   Digamos que queira substituir a primeira rádio da lista atual (RADIO 80FM) pela Antena 1, então teremos na primeira linha:
+Exemplo:   Digamos que queira substituir a primeira rádio da lista atual (SYNTHWAVE RETROWAVE) pela Antena 1, então teremos na primeira linha:
 
-B http://antena1.newradio.it/stream/1/
-Logo a imagem B.png tambem deverá ser substituída.
+01 http://antena1.newradio.it/stream/1/
+Logo a imagem 01.png tambem deverá ser substituída.
 Coloquei um template bem simples aqui na pasta para fazer novas imagens para rádios, junta está também a fonte que utilizei.
 
 
