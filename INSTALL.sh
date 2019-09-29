@@ -29,8 +29,10 @@ cd /usr/local/bin/RADIO/;
 sudo wget -O radio.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/radio.sh" &&
 sudo chmod +x /usr/local/bin/RADIO/radio.sh;
 cd /usr/local/bin/RADIO/;
-sudo wget -O TrocaMusica.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/TrocaMusica.sh" &&
-sudo chmod +x /usr/local/bin/RADIO/TrocaMusica.sh;
+sudo wget -O TrocaMusica.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/ProximaMusica.sh" &&
+sudo chmod +x /usr/local/bin/RADIO/ProximaMusica.sh;
+sudo wget -O TrocaMusica.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/PausaMusica.sh" &&
+sudo chmod +x /usr/local/bin/RADIO/PausaMusica.sh;
 cd /usr/local/bin/RADIO/;
 sudo wget -O pngview "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/pngview" &&
 sudo chmod +x /usr/local/bin/RADIO/pngview;
@@ -47,16 +49,16 @@ cd /home/pi/RetroPie/roms/RADIO/;
 wget -O RADIOS.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/RADIOS.txt" &&
 sudo chmod 777 /home/pi/RetroPie/roms/RADIO/RADIOS.txt;
 wget -O orbitron-black.otf "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/orbitron-black.otf" &&
-wget -O B.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/B.png" &&
-wget -O C.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/C.png" &&
-wget -O D.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/D.png" &&
-wget -O E.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/E.png" &&
-wget -O F.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/F.png" &&
-wget -O G.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/G.png" &&
-wget -O H.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/H.png" &&
-wget -O I.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/I.png" &&
-wget -O J.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/J.png" &&
-wget -O K.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/K.png" &&
+wget -O 01.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/01.png" &&
+wget -O 02.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/02.png" &&
+wget -O 03.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/03.png" &&
+wget -O 04.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/04.png" &&
+wget -O 05.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/05.png" &&
+wget -O 06.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/06.png" &&
+wget -O 07.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/07.png" &&
+wget -O 08.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/08.png" &&
+wget -O 09.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/09.png" &&
+wget -O 10.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/10.png" &&
 wget -O leia-me.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/leia-me.txt" &&
 wget -O TEMPLATE.psd "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/TEMPLATE.psd" &&
 
