@@ -29,7 +29,7 @@ Caso queira alterar a lista de rádios siga a instrução no leia-me que fica em
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
-**INSTALAÇÃO:** 
+**COMO INSTALAR:** 
 Com a raspberry conectada à internet abra o terminal e execute o seguinte comando:
     
 **wget -O - "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/INSTALL.sh" | sudo bash**
