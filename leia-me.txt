@@ -20,7 +20,10 @@ Aqui nesta pasta também ficam as imagens png de cada rádio.
 
 QUER ADICIONAR OUTRAS RÁDIOS?
 
-IMPORTANTE: Não renomeie o arquivo e siga o mesmo padrão de formatação. Mantenha a letra que vem antes de cada link e não deixe linhas em branco no final do arquivo.
+IMPORTANTE: Não renomeie o arquivo e siga o mesmo padrão de formatação. Mantenha o número que vem antes de cada url e não deixe linhas em branco no final do arquivo.
+
+VOCÊ PODE MONTAR SUA LISTA COM NO MÁXIMO 10 URLS DE RÁDIOS.
+ALGUMAS RÁDIOS PODEM NÃO FUNCIONAR, POR INCOMPATIBILIDADE COM O MPLAYER.
 
 1- Como conseguir o link de uma rádio?
 
