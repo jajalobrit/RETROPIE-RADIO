@@ -15,8 +15,6 @@
 ---------------------------------------------------------------------------------------------------------------------------------
 **IMPORTANTE:**
 
-<br />Para adicionar outras rádios veja o leia-me que fica salvo em /home/pi/RetroPie/roms/RADIO após a instalação.
-<br />Por algum motivo, que ainda não descobri, só funciona bem com "playlists" de até 10 urls. 
 
 <br />Por padrão o script tem um delay de 5 segundos para iniciar ( de modo a não tocar rádio enquanto a splashscreen estiver na tela).
 <br />Caso queira alterar o delay abra o arquivo /opt/retropie/configs/all/autostart.sh e mude o valor do "sleep".
