@@ -39,7 +39,7 @@ Exemplo:   Digamos que queira substituir a primeira rádio da lista atual (SYNTH
 
 01 http://antena1.newradio.it/stream/1/
 Logo a imagem 01.png tambem deverá ser substituída.
-Coloquei um template bem simples aqui na pasta para fazer novas imagens para rádios, junta está também a fonte que utilizei.
+Coloquei um template bem simples aqui na pasta para fazer novas imagens para rádios, junto com as fontes que usei.
 
 
 ###############################################################################################################
