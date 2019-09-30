@@ -18,11 +18,12 @@
 <br />Por padrão o script tem um delay de 15 segundos para iniciar ( de modo a não tocar rádio enquanto a splashscreen estiver na tela).
 <br />Caso queira alterar o delay execute no terminal :  sudo nano usr/local/bin/RADIO/radio.sh   e altere o valor de sleep para o desejado (em segundos), em seguida salve a alteração.
 
-Caso queira alterar a lista de rádios siga a instrução no leia-me que fica em /home/pi/Retropie/roms/RADIO após a instalação
+<br />Caso queira alterar a lista de rádios siga a instrução no leia-me que fica em /home/pi/Retropie/roms/RADIO após a instalação
 
  
 ----------------------------------------------------------------------------------------------------------------------------------
-**LISTA DE RÁDIOS**
+
+**LISTA DE RÁDIOS:**
 <br />01-Synthwave Retrowave
 <br />02-Kiss FM
 <br />03-Radio 80 FM
@@ -37,10 +38,10 @@ Caso queira alterar a lista de rádios siga a instrução no leia-me que fica em
 ---------------------------------------------------------------------------------------------------------------------------------
 
 **COMO INSTALAR:** 
-Com a raspberry conectada à internet abra o terminal e execute o seguinte comando:
+<br />Com a raspberry conectada à internet abra o terminal e execute o seguinte comando:
     
-**wget -O - "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/INSTALL.sh" | sudo bash**
+<br />**wget -O - "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/INSTALL.sh" | sudo bash**
     
-A instalação será realizada automaticamente e a Raspberry será reiniciada.   
+<br />A instalação será realizada automaticamente e a Raspberry será reiniciada.   
 
 ----------------------------------------------------------------------------------------------------------------------------------
