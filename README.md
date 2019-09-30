@@ -19,9 +19,7 @@
 <br />Por padrão o script tem um delay de 5 segundos para iniciar ( de modo a não tocar rádio enquanto a splashscreen estiver na tela).
 <br />Caso queira alterar o delay abra o arquivo /opt/retropie/configs/all/autostart.sh e mude o valor do "sleep".
 
-Caso queira alterar a lista de rádios siga a instrução no leia-me que fica em /home/pi/Retropie/roms/RADIO após a instalação.
-
-<br />As rádios, como tudo que funciona online, podem ficar indisponíveis por tempo indeterminado, o que não é um problema do script
+Caso queira alterar a lista de rádios siga a instrução no leia-me que fica em /home/pi/Retropie/roms/RADIO após a instalação
 
  
 ----------------------------------------------------------------------------------------------------------------------------------
