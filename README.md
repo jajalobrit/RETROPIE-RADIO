@@ -9,7 +9,7 @@
 
 **FUNCIONAMENTO:**
 <br />O script usa o mplayer para carregar em loop uma lista de urls de streams de webrádios. 
-<br />O jslisten é usado como serviço monitorando os botões do controle, cada vez que o gatilho direito é pressionado é executado um script secundário que envia um comando "quit" ao mplayer, o que faz com que o loop seja interrompido e rapidamente retomado passando para  a próxima linha da lista de rádios.
+<br />O jslisten é usado como serviço monitorando os botões do controle, cada vez que o gatilho direito é pressionado é executado um script secundário que envia um comando "quit" ao mplayer, o que faz com que o loop seja interrompido e rapidamente retomado passando para  a próxima linha da lista de rádios. O gatilho esquerdo serve para pausar/retomar.
 <br />Uma imagem png é carregada para cada url no momento em que ela é iniciada pelo mplayer.
 <br />Ao abrir um emulador ou o kodi o funcionamento pára e só é retomado ao fechar.
 
