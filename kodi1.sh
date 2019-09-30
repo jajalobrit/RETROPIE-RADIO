@@ -1,4 +1,5 @@
 sudo pkill radio.sh
+sudo pkill radio2.sh
 sudo killall pngview
 kodi >/dev/null
 if [ "$?" = "0" ]; then
