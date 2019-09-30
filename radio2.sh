@@ -4,7 +4,7 @@
 ######################################################### RADIOS NO RETROPIE ##############################################################
 #Autor: Jairo Lopes
 
-echo "01" > /home/pi/tocando-agora.txt;
+
 while true; do for i in $(cat /home/pi/RetroPie/roms/RADIO/RADIOS.txt); do sudo mplayer -slave -input file=/usr/local/bin/RADIO/radio.fifo $i >/dev/null ; echo "$i" > /home/pi/tocando-agora.txt; done done &
 while :; do
 for R in $(tail -n 1 /home/pi/tocando-agora.txt); 
