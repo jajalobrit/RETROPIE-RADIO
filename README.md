@@ -15,8 +15,6 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------
 **IMPORTANTE:**
-
-
 <br />Por padrão o script tem um delay de 15 segundos para iniciar ( de modo a não tocar rádio enquanto a splashscreen estiver na tela).
 <br />Caso queira alterar o delay execute no terminal :  sudo nano usr/local/bin/RADIO/radio.sh   e altere o valor de sleep para o desejado (em segundos), em seguida salve a alteração.
 
@@ -24,7 +22,19 @@ Caso queira alterar a lista de rádios siga a instrução no leia-me que fica em
 
  
 ----------------------------------------------------------------------------------------------------------------------------------
+**LISTA DE RÁDIOS**
+<br />01-Synthwave Retrowave
+<br />02-Kiss FM
+<br />03-Radio 80 FM
+<br />04-Be Good 80s
+<br />05-RPR1. Old School Hip-Hop
+<br />06-Classic Rock 109
+<br />07-90s90s Hits
+<br />08-Rádio Motel
+<br />09-Rádio Latina 104
+<br />10-Heavy Metal Ears
 
+---------------------------------------------------------------------------------------------------------------------------------
 
 **COMO INSTALAR:** 
 Com a raspberry conectada à internet abra o terminal e execute o seguinte comando:
