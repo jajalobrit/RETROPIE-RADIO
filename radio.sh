@@ -4,6 +4,14 @@
 #Autor: Jairo Lopes
 
 
+
+
+##### TEMPO EM SEGUNDOS PARA AGUARDAR ATÉ INICIAR ( EVITA QUE O RÁDIO COMECE A TOCAR DURANTE A SPLASHSCREEN)
+
+##############
+sleep 15     #
+##############
+
 echo "01" > /home/pi/tocando-agora.txt;
 while true; do for i in $(cat /home/pi/RetroPie/roms/RADIO/RADIOS.txt); do sudo mplayer -slave -input file=/usr/local/bin/RADIO/radio.fifo $i >/dev/null ; echo "$i" > /home/pi/tocando-agora.txt; done done &
 while :; do
