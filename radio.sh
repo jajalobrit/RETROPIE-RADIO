@@ -19,7 +19,7 @@ for R in $(tail -n 1 /home/pi/tocando-agora.txt);
 do
 sudo pkill -u pi pngview
 sleep 1
-sudo -u pi /usr/local/bin/RADIO/pngview -b 0 -l 999995 -y 15 -x 1580 /home/pi/RetroPie/roms/RADIO/$R.png;
+sudo -u pi /usr/local/bin/RADIO/pngview -b 0 -l 999995 -y 15 -x 1560 /home/pi/RetroPie/roms/RADIO/$R.png;
 sudo pkill -u pi pngview
 sleep 1
 done
