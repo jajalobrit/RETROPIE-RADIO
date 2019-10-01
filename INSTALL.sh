@@ -12,8 +12,6 @@
 printf "\n\n"
 echo "INSTALANDO MPLAYER!"
 yes | sudo apt-get install mplayer &&
-sudo mkfifo /usr/local/bin/RADIO/radio.fifo
-sudo chmod 777 /usr/local/bin/RADIO/radio.fifo
 printf "\n\n"
 echo -e "\033[1;32m MPLAYER OK! \033[0m"
 
@@ -21,6 +19,7 @@ echo -e "\033[1;32m MPLAYER OK! \033[0m"
 ############################################ DOWNLOAD DOS ARQUIVOS NECESSÁRIOS ##################################################
 printf "\n\n"
 echo "BAIXANDO ARQUIVOS"
+
 
 sudo echo "01" > /home/pi/tocando-agora.txt;
 sudo chmod 777 /home/pi/tocando-agora.txt;
@@ -64,6 +63,8 @@ wget -O 09.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/mast
 wget -O 10.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/10.png" &&
 wget -O leia-me.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/leia-me.txt" &&
 wget -O TEMPLATE.psd "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/TEMPLATE.psd" &&
+sudo mkfifo /usr/local/bin/RADIO/radio.fifo &&
+sudo chmod 777 /usr/local/bin/RADIO/radio.fifo
 
 printf "\n\n"
 echo -e "\033[1;32m ARQUIVOS OK! \033[0m"
