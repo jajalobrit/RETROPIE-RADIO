@@ -31,9 +31,9 @@ sudo chmod +x /usr/local/bin/RADIO/radio.sh;
 sudo wget -O radio2.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/radio2.sh" &&
 sudo chmod +x /usr/local/bin/RADIO/radio2.sh;
 cd /usr/local/bin/RADIO/;
-sudo wget -O TrocaMusica.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/ProximaRadio.sh" &&
+sudo wget -O ProximaRadio.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/ProximaRadio.sh" &&
 sudo chmod +x /usr/local/bin/RADIO/ProximaRadio.sh;
-sudo wget -O TrocaMusica.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/PausaRadio.sh" &&
+sudo wget -O PausaRadio.sh "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/PausaRadio.sh" &&
 sudo chmod +x /usr/local/bin/RADIO/PausaRadio.sh;
 cd /usr/local/bin/RADIO/;
 sudo wget -O pngview "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/pngview" &&
