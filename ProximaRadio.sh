@@ -3,5 +3,5 @@
 #################################################### TROCA PARA A PRÓXIMA A RÁDIO #################################################
 #Autor: Jairo Lopes
 
-sudo echo "quit" > /usr/local/bin/RADIO/radio.fifo
+sudo pkill mplayer
 sudo pkill -u pi pngview
