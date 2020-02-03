@@ -24,16 +24,15 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
 **LISTA DE RÁDIOS:**
-<br />01-Synthwave Retrowave
-<br />02-Kiss FM
-<br />03-Radio 80 FM
-<br />04-Be Good 80s
-<br />05-RPR1. Old School Hip-Hop
-<br />06-Classic Rock 109
-<br />07-90s90s Hits
+<br />01-Be Good Radio
+<br />02-Synthwave Retrowave
+<br />03-Classic Rock 109
+<br />04-Rádio 80 FM
+<br />05-90s90s Hits
+<br />06-Heavy Metal Ears
+<br />07-Rádio Motel
 <br />08-Rádio Motel
 <br />09-Rádio Latina 104
-<br />10-Heavy Metal Ears
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
