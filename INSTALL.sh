@@ -59,8 +59,6 @@ wget -O 05.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/mast
 wget -O 06.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/06.png" &&
 wget -O 07.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/07.png" &&
 wget -O 08.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/08.png" &&
-wget -O 09.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/09.png" &&
-wget -O 10.png "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/10.png" &&
 wget -O leia-me.txt "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/leia-me.txt" &&
 wget -O TEMPLATE.psd "https://raw.githubusercontent.com/jajalobrit/RETROPIE-RADIO/master/TEMPLATE.psd" &&
 sudo mkfifo /usr/local/bin/RADIO/radio.fifo &&
