@@ -5,4 +5,3 @@
 05 http://streams.90s90s.de/eurodance/mp3-192/radiode/
 06 http://ip2.paineldj5.com.br:8680/stream
 07 http://192.99.170.8:5580/stream3
-08 http://173.212.215.227:9056/stream/1/
