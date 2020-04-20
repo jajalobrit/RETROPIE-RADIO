@@ -1,7 +1,7 @@
 01 http://bigrradio.cdnstream1.com/5217_128?
 02 http://139.162.14.151:9090/stream/1/
 03 http://listen.classicrock109.com:10042/stream/1/
-04 http://192.198.204.194:9020/stream1
+04 http://104.247.221.130:9020/stream1
 05 http://streams.90s90s.de/eurodance/mp3-192/radiode/
 06 http://ip2.paineldj5.com.br:8680/stream
 07 http://192.99.170.8:5580/stream3
