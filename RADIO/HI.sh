@@ -13,11 +13,11 @@ fi
 
 
 sudo mkdir -p /dev/shm/MUSICA &
-sudo convert -size 350x60 xc:black -fill LawnGreen -font FjallaOne -gravity west -pointsize 15 -draw "text 0,1 'BEM VINDO JAIRO!!'" /dev/shm/MUSICA/HI.png
+sudo convert -size 350x60 xc:black -fill LawnGreen -font FjallaOne -gravity west -pointsize 15 -draw "text 0,1 'BEM VINDO!!'" /dev/shm/MUSICA/HI.png
 sudo convert /dev/shm/MUSICA/HI.png -fuzz 10% -transparent black /dev/shm/MUSICA/HI.png
 sudo convert +append -gravity east /usr/local/bin/RADIO/IMG/HI.png /dev/shm/MUSICA/HI.png /dev/shm/MUSICA/HI.png
 sudo -u pi /usr/local/bin/RADIO/pngview -b 0 -l 999997 -y 9 -x 1440 /dev/shm/MUSICA/HI.png &
-sudo mplayer /home/pi/RetroPie/roms/BGM/"BEM VINDO JAIRO!".ogg	
+sudo mplayer /usr/local/bin/RADIO/"BEM VINDO!".ogg	
 sudo pkill -u pi pngview
 
 ## ramdom ---> find /usr/local/bin/RADIO/IMG/ -type f | shuf -n 1
