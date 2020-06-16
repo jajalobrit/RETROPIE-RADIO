@@ -3,7 +3,7 @@ import subprocess
 import re
 import sys
 #consegue pegar titulo da musica de uma stream de radio
-url = 'http://paris.discovertrance.com:8008//'
+url = 'http://strm112.1.fm/back280s_mobile_mp3'
 
 # Mods and chiptunes tunes often have too high stereo separation, soften it with
 # panning:
