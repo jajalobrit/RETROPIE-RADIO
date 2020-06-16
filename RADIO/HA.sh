@@ -98,7 +98,7 @@ sudo rm -f /dev/shm/MUSICA/*
 	sudo pkill -u pi pngview
 	tail -n 1 /dev/shm/musica | tr '/' '|' | sed "s/'/’/g" | sed "s/STREAMURL//g" | tr -d \; | tr -d \= | tr -d \. | while IFS=$'\n' read line; do
 	sudo convert -size 350x60 xc:none -fill white -gravity west \
-	-pointsize 12 -draw "text 0,-21 'ouvindo:  RADIO DISCOVER TRANCE'" \
+	-pointsize 12 -font FjallaOne -draw "text 0,-21 'ouvindo:  RADIO DISCOVER TRANCE'" \
 	-fill LawnGreen -pointsize 14 -font FjallaOne -draw "text 0,1 '$line'" /dev/shm/MUSICA/"$line".png &&
 	sudo convert +append -gravity east /usr/local/bin/RADIO/IMG/R8.png /dev/shm/MUSICA/"$line".png /dev/shm/MUSICA/"$line".png &&
 	sudo -u pi /usr/local/bin/RADIO/pngview -b 0 -l 999997 -y 9 -x 1440 /dev/shm/MUSICA/"$line".png
@@ -110,7 +110,7 @@ sudo rm -f /dev/shm/MUSICA/*
 	sudo pkill -u pi pngview
 	tail -n 1 /dev/shm/musica | tr '/' '|' | sed "s/'/’/g" | sed "s/STREAMURL//g" | tr -d \; | tr -d \= | tr -d \. | while IFS=$'\n' read line; do
 	sudo convert -size 350x60 xc:none -fill white -gravity west \
-	-pointsize 12 -draw "text 0,-21 'ouvindo:  MY 105 RAP & HIP HOP'" \
+	-pointsize 12 -font FjallaOne -draw "text 0,-21 'ouvindo:  MY 105 RAP & HIP HOP'" \
 	-fill LawnGreen -pointsize 14 -font FjallaOne -draw "text 0,1 '$line'" /dev/shm/MUSICA/"$line".png &&
 	sudo convert +append -gravity east /usr/local/bin/RADIO/IMG/R9.png /dev/shm/MUSICA/"$line".png /dev/shm/MUSICA/"$line".png &&
 	sudo -u pi /usr/local/bin/RADIO/pngview -b 0 -l 999997 -y 9 -x 1440 /dev/shm/MUSICA/"$line".png
